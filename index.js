@@ -29,6 +29,16 @@ app.get("/" , function (req,res){
 });
 
 
+app.get("/file/:filename" , function (req,res){
+    const file_name=req.params.filename;
+    const file_Data=req.params.filedata;
+    fs.readFile(`./files/${file_name}` , "utf-8" , function(err,filedata){
+      res.render('show' , {filename: file_name , filedata, file_Data })
+    });
+   
+});
+
+
 app.post('/create' , function (req,res){
     // frontend se any wali request ka title  Task_title varibale me store hoga 
     const Task_title=req.body.title;
