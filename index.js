@@ -57,3 +57,82 @@ app.listen( port , function(){
     console.log(`its Running on port ${port}`);
 });
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// OLD PRACTICE CODE AND THEORY
+
+
+// const express= require("express") // Import the Express.js module
+
+
+// // This app object will be used to define routes, middleware, 
+// // and to listen for incoming requests.
+// const app = express();  // This line initializes a new Express application
+// const PORT =3000; // Define the port number for the server
+
+
+// // MIDDLEWARE
+// // kisi bhi route ke liye request aye gi to sab se pehly app.use chaly ga
+// // next(); request koo aggy forward kery ga us route ko jis ke liye request ai thi 
+// //jitny bhi app.use hon ge pahly wo sab chaly ge fir request required route
+// // per jaye gi 
+// app.use(function(req,res,next){
+//     console.log("middleware chala");
+//     next();
+// });
+// app.use(function(req,res,next){
+//     console.log("middleware chala aik or barr");
+//     next();
+// });
+
+
+
+// // abb routes creates karry ge / , /zeeshan are routes
+// // app.get(route , request handler=>{}); 
+// app.get('/' ,function ( req , res){
+//     res.send ("SERVER RUNNING PERFECTLLY!");
+// });
+
+// app.get('/zee' , function(req , res){
+
+//     // res.send("Hello world.....!");
+
+
+//     response.send("Hello world.....!");
+//     // it deals with error print it to vs code console and move execution to error handler
+//     return next(new Error("Not implimented"));
+// });
+    
+
+// // Eror handller
+// app.use((err,req,res,next)=>{
+//     console.error(err.stack);
+//     res.status(500).send('Something Went wrong');
+// });
+
+
+
+// // app.listen(PORT, ...): 
+// // Starts the server and makes it listen for requests on port 5000. 
+// // When the server is successfully running, it will log
+// // "Server is running on http://localhost:3000".
+// //  With backticks we write messeges and include variables within them like ${var_name}
+// app.listen(PORT , ()=>{
+//     console.log(`Server is running perfectlly onnn http://localhost:${PORT}`);
+// });

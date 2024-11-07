@@ -1,0 +1,29 @@
+/Backend
+├── /src
+│   ├── /controllers    // Request handling logic
+│   ├── /models         // Database models
+│   ├── /services       // Business logic
+│   ├── /routes         // Route definitions
+│   ├── /middlewares    // Middleware functions
+│   ├── /config         // Config files (e.g., environment variables, database config)
+│   └── /utils          // Utility functions
+├── /tests              // Tests for your application
+├── package.json        // Dependencies and scripts
+└── server.js  or app.js         // Main server file
+
+
+-> uninsatll npm packages
+npm uninstall packageName
+
+-> install specific version of any package
+npm i packageName@version
+
+
+-> EXPRESS JS
+express aik npm package han
+framework hn 
+manage everyting  from receiving request to giving back response 
+
+
+->Request and response
+Frontend - Backend - Frontend
